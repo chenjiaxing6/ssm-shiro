@@ -9,6 +9,7 @@ import java.util.Map;
 /**
  * @author Chen
  * @create 2019-05-02 13:32
+ * 角色管理数据持久层接口
  */
 @Repository
 public interface RoleDao {
