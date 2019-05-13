@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--命名空间应该是对应接口的包名+接口名 -->
+<mapper namespace="cn.edu.neusoft.dao.RoleDao">
+    <select id="getRoleByUserId" resultType="String" parameterType="Long">
+        select sn from role r join user_role u on r.id = u.role_id where user_id = #{id}
+    </select>
+
+    <select id="getRoleList" resultType="Role">
+        select * from role
+    </select>
+
+    <select id="getCount" resultType="Integer">
+        select count(*) from role
+    </select>
+
+    <select id="getRoleListByPage" parameterType="Map" resultType="Role">
+        select * from role limit #{offset},#{limit}
+    </select>
+
+    <insert id="addRole" parameterType="Role">
+        <selectKey resultType="java.lang.Long" order="AFTER" keyProperty="id">
+            SELECT LAST_INSERT_ID()
+        </selectKey>
+        insert into role values(null ,#{name},#{sn},#{desc})
+    </insert>
+
+    <delete id="deleteRole" parameterType="Long">
+        delete from role where id = #{id}
+    </delete>
+
+    <select id="getRoleById" parameterType="Long" resultType="Role">
+        select * from role where id = #{id}
+    </select>
+
+    <update id="updateRole" parameterType="Role">
+        update role r set r.name = #{name},r.sn=#{sn},r.desc=#{desc} where r.id = #{id}
+    </update>
+
+    <delete id="deleteAllRole">
+        delete from role where id in
+        <foreach collection="array" open="(" close=")" item="id" separator=",">
+            #{id}
+        </foreach>
+    </delete>
+</mapper>

@@ -1,0 +1,42 @@
+2019-05-06 19:48:46,992 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring-mybatis.xml]
+2019-05-06 19:48:47,299 INFO [org.springframework.context.support.GenericApplicationContext] - Refreshing org.springframework.context.support.GenericApplicationContext@59e84876: startup date [Mon May 06 19:48:47 CST 2019]; root of context hierarchy
+2019-05-06 19:48:47,456 INFO [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] - Loading properties file from class path resource [jdbc.properties]
+2019-05-06 19:48:47,465 INFO [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-05-06 19:48:48,370 INFO [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2019-05-06 19:48:48,710 INFO [org.springframework.context.support.GenericApplicationContext] - Closing org.springframework.context.support.GenericApplicationContext@59e84876: startup date [Mon May 06 19:48:47 CST 2019]; root of context hierarchy
+2019-05-06 19:48:48,714 INFO [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} closed
+2019-05-06 19:50:05,335 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring-mybatis.xml]
+2019-05-06 19:50:05,689 INFO [org.springframework.context.support.GenericApplicationContext] - Refreshing org.springframework.context.support.GenericApplicationContext@59e84876: startup date [Mon May 06 19:50:05 CST 2019]; root of context hierarchy
+2019-05-06 19:50:05,828 INFO [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] - Loading properties file from class path resource [jdbc.properties]
+2019-05-06 19:50:05,838 INFO [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-05-06 19:50:06,641 INFO [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2019-05-06 19:50:07,376 INFO [org.springframework.context.support.GenericApplicationContext] - Closing org.springframework.context.support.GenericApplicationContext@59e84876: startup date [Mon May 06 19:50:05 CST 2019]; root of context hierarchy
+2019-05-06 19:50:07,380 INFO [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} closed
+2019-05-06 19:50:52,080 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring-mybatis.xml]
+2019-05-06 19:50:52,379 INFO [org.springframework.context.support.GenericApplicationContext] - Refreshing org.springframework.context.support.GenericApplicationContext@59e84876: startup date [Mon May 06 19:50:52 CST 2019]; root of context hierarchy
+2019-05-06 19:50:52,583 INFO [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] - Loading properties file from class path resource [jdbc.properties]
+2019-05-06 19:50:52,589 INFO [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-05-06 19:50:53,377 INFO [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2019-05-06 19:50:53,996 INFO [org.springframework.context.support.GenericApplicationContext] - Closing org.springframework.context.support.GenericApplicationContext@59e84876: startup date [Mon May 06 19:50:52 CST 2019]; root of context hierarchy
+2019-05-06 19:50:54,006 INFO [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} closed
+2019-05-06 19:55:56,944 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring-mybatis.xml]
+2019-05-06 19:55:57,243 INFO [org.springframework.context.support.GenericApplicationContext] - Refreshing org.springframework.context.support.GenericApplicationContext@59e84876: startup date [Mon May 06 19:55:57 CST 2019]; root of context hierarchy
+2019-05-06 19:55:57,371 INFO [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] - Loading properties file from class path resource [jdbc.properties]
+2019-05-06 19:55:57,401 INFO [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-05-06 19:55:58,129 INFO [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2019-05-06 19:55:59,514 INFO [org.springframework.context.support.GenericApplicationContext] - Closing org.springframework.context.support.GenericApplicationContext@59e84876: startup date [Mon May 06 19:55:57 CST 2019]; root of context hierarchy
+2019-05-06 19:55:59,519 INFO [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} closed
+2019-05-06 20:45:04,464 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring-mybatis.xml]
+2019-05-06 20:45:04,734 INFO [org.springframework.context.support.GenericApplicationContext] - Refreshing org.springframework.context.support.GenericApplicationContext@59e84876: startup date [Mon May 06 20:45:04 CST 2019]; root of context hierarchy
+2019-05-06 20:45:04,900 INFO [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] - Loading properties file from class path resource [jdbc.properties]
+2019-05-06 20:45:04,905 INFO [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-05-06 20:45:05,573 INFO [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2019-05-06 20:45:06,185 INFO [org.springframework.context.support.GenericApplicationContext] - Closing org.springframework.context.support.GenericApplicationContext@59e84876: startup date [Mon May 06 20:45:04 CST 2019]; root of context hierarchy
+2019-05-06 20:45:06,189 INFO [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} closed
+2019-05-06 21:14:47,711 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring-mybatis.xml]
+2019-05-06 21:14:51,676 INFO [org.springframework.context.support.GenericApplicationContext] - Refreshing org.springframework.context.support.GenericApplicationContext@1d6ed26: startup date [Mon May 06 21:14:51 CST 2019]; root of context hierarchy
+2019-05-06 21:14:52,565 INFO [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] - Loading properties file from class path resource [jdbc.properties]
+2019-05-06 21:14:52,582 INFO [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-05-06 21:14:53,994 INFO [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2019-05-06 21:14:55,078 INFO [org.springframework.context.support.GenericApplicationContext] - Closing org.springframework.context.support.GenericApplicationContext@1d6ed26: startup date [Mon May 06 21:14:51 CST 2019]; root of context hierarchy
+2019-05-06 21:14:55,139 INFO [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} closed

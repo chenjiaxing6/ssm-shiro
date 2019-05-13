@@ -1,0 +1,5 @@
+2019-03-23 09:08:56,801 INFO [org.springframework.context.support.ClassPathXmlApplicationContext] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6504e3b2: startup date [Sat Mar 23 09:08:56 CST 2019]; root of context hierarchy
+2019-03-23 09:08:56,869 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring-mybatis.xml]
+2019-03-23 09:08:57,315 INFO [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] - Loading properties file from class path resource [jdbc.properties]
+2019-03-23 09:08:57,327 INFO [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-03-23 09:08:58,011 INFO [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited

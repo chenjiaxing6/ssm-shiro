@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--命名空间应该是对应接口的包名+接口名 -->
+<mapper namespace="cn.edu.neusoft.dao.PermissionDao">
+    <insert id="addPermission" parameterType="Permission">
+        insert into permission values(null ,#{name},#{resource})
+    </insert>
+
+    <select id="getAllResources" resultType="String">
+        select resource from permission
+    </select>
+
+    <select id="getAllPermissionsByUserId" parameterType="Long" resultType="String">
+        select resource from user u
+                           join user_role ur on u.id = ur.user_id
+                           join role_permission rp on ur.role_id = rp.role_id
+                           join permission p on rp.permission_id = p.id
+        where u.id = #{id}
+    </select>
+
+    <select id="getPermissionsIdByRoleId" parameterType="Long" resultType="Long">
+        SELECT
+            rp.permission_id
+        FROM
+            role r
+                JOIN role_permission rp on  r.id = rp.role_id
+        WHERE
+            r.id = #{id}
+    </select>
+
+    <select id="getPermissionListByPage" resultType="Permission" parameterType="Map">
+        select * from permission limit #{offset},#{limit}
+    </select>
+
+    <select id="getPermissonCount" resultType="Integer">
+        select count(*) from permission
+    </select>
+</mapper>

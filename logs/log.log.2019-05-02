@@ -1,0 +1,106 @@
+2019-05-02 13:54:03,800 INFO [org.springframework.context.support.GenericApplicationContext] - Refreshing org.springframework.context.support.GenericApplicationContext@69d9c55: startup date [Thu May 02 13:54:03 CST 2019]; root of context hierarchy
+2019-05-02 13:54:03,862 INFO [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-05-02 13:54:03,927 INFO [org.springframework.context.support.GenericApplicationContext] - Closing org.springframework.context.support.GenericApplicationContext@69d9c55: startup date [Thu May 02 13:54:03 CST 2019]; root of context hierarchy
+2019-05-02 13:54:27,363 INFO [org.springframework.context.support.GenericApplicationContext] - Refreshing org.springframework.context.support.GenericApplicationContext@59e84876: startup date [Thu May 02 13:54:27 CST 2019]; root of context hierarchy
+2019-05-02 13:54:27,412 INFO [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-05-02 13:54:27,491 ERROR [org.springframework.test.context.TestContextManager] - Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@365c30cc] to prepare test instance [RoleServiceTest@701fc37a]
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'RoleServiceTest': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private cn.edu.neusoft.service.RoleService RoleServiceTest.roleService; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [cn.edu.neusoft.service.RoleService] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:292)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1185)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireBeanProperties(AbstractAutowireCapableBeanFactory.java:384)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:110)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:319)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:212)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:232)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:89)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:175)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private cn.edu.neusoft.service.RoleService RoleServiceTest.roleService; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [cn.edu.neusoft.service.RoleService] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:508)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:289)
+	... 25 more
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [cn.edu.neusoft.service.RoleService] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoSuchBeanDefinitionException(DefaultListableBeanFactory.java:1100)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:960)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:855)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:480)
+	... 27 more
+2019-05-02 13:54:27,507 INFO [org.springframework.context.support.GenericApplicationContext] - Closing org.springframework.context.support.GenericApplicationContext@59e84876: startup date [Thu May 02 13:54:27 CST 2019]; root of context hierarchy
+2019-05-02 13:58:12,109 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring-mybatis.xml]
+2019-05-02 13:58:13,604 INFO [org.springframework.context.support.GenericApplicationContext] - Refreshing org.springframework.context.support.GenericApplicationContext@12843fce: startup date [Thu May 02 13:58:13 CST 2019]; root of context hierarchy
+2019-05-02 13:58:14,058 INFO [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] - Loading properties file from class path resource [jdbc.properties]
+2019-05-02 13:58:14,066 INFO [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-05-02 13:58:15,422 INFO [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2019-05-02 13:58:16,374 INFO [org.springframework.context.support.GenericApplicationContext] - Closing org.springframework.context.support.GenericApplicationContext@12843fce: startup date [Thu May 02 13:58:13 CST 2019]; root of context hierarchy
+2019-05-02 13:58:16,380 INFO [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} closed
+2019-05-02 13:58:49,482 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring-mybatis.xml]
+2019-05-02 13:58:50,110 INFO [org.springframework.context.support.GenericApplicationContext] - Refreshing org.springframework.context.support.GenericApplicationContext@184cf7cf: startup date [Thu May 02 13:58:50 CST 2019]; root of context hierarchy
+2019-05-02 13:58:50,415 INFO [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] - Loading properties file from class path resource [jdbc.properties]
+2019-05-02 13:58:50,426 INFO [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-05-02 13:58:51,294 INFO [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2019-05-02 13:59:31,211 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring-mybatis.xml]
+2019-05-02 13:59:31,942 INFO [org.springframework.context.support.GenericApplicationContext] - Refreshing org.springframework.context.support.GenericApplicationContext@27ae2fd0: startup date [Thu May 02 13:59:31 CST 2019]; root of context hierarchy
+2019-05-02 13:59:32,271 INFO [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] - Loading properties file from class path resource [jdbc.properties]
+2019-05-02 13:59:32,287 INFO [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-05-02 13:59:33,901 INFO [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2019-05-02 13:59:34,590 INFO [org.springframework.context.support.GenericApplicationContext] - Closing org.springframework.context.support.GenericApplicationContext@27ae2fd0: startup date [Thu May 02 13:59:31 CST 2019]; root of context hierarchy
+2019-05-02 13:59:34,597 INFO [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} closed
+2019-05-02 18:27:02,733 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring-mybatis.xml]
+2019-05-02 18:27:03,808 INFO [org.springframework.context.support.GenericApplicationContext] - Refreshing org.springframework.context.support.GenericApplicationContext@59e84876: startup date [Thu May 02 18:27:03 CST 2019]; root of context hierarchy
+2019-05-02 18:27:04,051 INFO [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] - Loading properties file from class path resource [jdbc.properties]
+2019-05-02 18:27:04,061 INFO [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-05-02 18:27:04,948 INFO [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2019-05-02 18:27:05,618 INFO [org.springframework.context.support.GenericApplicationContext] - Closing org.springframework.context.support.GenericApplicationContext@59e84876: startup date [Thu May 02 18:27:03 CST 2019]; root of context hierarchy
+2019-05-02 18:27:05,624 INFO [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} closed
+2019-05-02 18:34:11,410 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring-mybatis.xml]
+2019-05-02 18:34:11,703 INFO [org.springframework.context.support.GenericApplicationContext] - Refreshing org.springframework.context.support.GenericApplicationContext@59e84876: startup date [Thu May 02 18:34:11 CST 2019]; root of context hierarchy
+2019-05-02 18:34:11,889 INFO [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] - Loading properties file from class path resource [jdbc.properties]
+2019-05-02 18:34:11,894 INFO [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-05-02 18:34:12,523 INFO [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2019-05-02 18:34:12,971 INFO [org.springframework.context.support.GenericApplicationContext] - Closing org.springframework.context.support.GenericApplicationContext@59e84876: startup date [Thu May 02 18:34:11 CST 2019]; root of context hierarchy
+2019-05-02 18:34:12,976 INFO [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} closed
+2019-05-02 18:34:43,396 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring-mybatis.xml]
+2019-05-02 18:34:43,934 INFO [org.springframework.context.support.GenericApplicationContext] - Refreshing org.springframework.context.support.GenericApplicationContext@11a9e7c8: startup date [Thu May 02 18:34:43 CST 2019]; root of context hierarchy
+2019-05-02 18:34:44,228 INFO [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] - Loading properties file from class path resource [jdbc.properties]
+2019-05-02 18:34:44,235 INFO [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-05-02 18:34:45,019 INFO [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2019-05-02 18:35:04,371 INFO [org.springframework.context.support.GenericApplicationContext] - Closing org.springframework.context.support.GenericApplicationContext@11a9e7c8: startup date [Thu May 02 18:34:43 CST 2019]; root of context hierarchy
+2019-05-02 18:35:04,377 INFO [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} closed
+2019-05-02 18:51:24,913 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring-mybatis.xml]
+2019-05-02 18:51:25,190 INFO [org.springframework.context.support.GenericApplicationContext] - Refreshing org.springframework.context.support.GenericApplicationContext@59e84876: startup date [Thu May 02 18:51:25 CST 2019]; root of context hierarchy
+2019-05-02 18:51:25,394 INFO [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] - Loading properties file from class path resource [jdbc.properties]
+2019-05-02 18:51:25,402 INFO [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-05-02 18:51:26,046 INFO [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2019-05-02 18:51:26,553 INFO [org.springframework.context.support.GenericApplicationContext] - Closing org.springframework.context.support.GenericApplicationContext@59e84876: startup date [Thu May 02 18:51:25 CST 2019]; root of context hierarchy
+2019-05-02 18:51:26,557 INFO [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} closed
+2019-05-02 18:51:43,063 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring-mybatis.xml]
+2019-05-02 18:51:43,379 INFO [org.springframework.context.support.GenericApplicationContext] - Refreshing org.springframework.context.support.GenericApplicationContext@59e84876: startup date [Thu May 02 18:51:43 CST 2019]; root of context hierarchy
+2019-05-02 18:51:43,549 INFO [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] - Loading properties file from class path resource [jdbc.properties]
+2019-05-02 18:51:43,554 INFO [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-05-02 18:51:44,341 INFO [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2019-05-02 18:51:45,145 INFO [org.springframework.context.support.GenericApplicationContext] - Closing org.springframework.context.support.GenericApplicationContext@59e84876: startup date [Thu May 02 18:51:43 CST 2019]; root of context hierarchy
+2019-05-02 18:51:45,150 INFO [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} closed
+2019-05-02 18:58:35,069 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring-mybatis.xml]
+2019-05-02 18:58:35,581 INFO [org.springframework.context.support.GenericApplicationContext] - Refreshing org.springframework.context.support.GenericApplicationContext@11a9e7c8: startup date [Thu May 02 18:58:35 CST 2019]; root of context hierarchy
+2019-05-02 18:58:35,890 INFO [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] - Loading properties file from class path resource [jdbc.properties]
+2019-05-02 18:58:35,897 INFO [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-05-02 18:58:36,880 INFO [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2019-05-02 18:58:37,537 INFO [org.springframework.context.support.GenericApplicationContext] - Closing org.springframework.context.support.GenericApplicationContext@11a9e7c8: startup date [Thu May 02 18:58:35 CST 2019]; root of context hierarchy
+2019-05-02 18:58:37,543 INFO [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} closed

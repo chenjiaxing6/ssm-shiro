@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--命名空间应该是对应接口的包名+接口名 -->
+<mapper namespace="cn.edu.neusoft.dao.UserDao">
+
+    <select id="findAll" resultType="cn.edu.neusoft.entity.User">
+        select * from user
+    </select>
+
+    <select id="getUserByUsername" parameterType="String" resultType="User">
+        select * from user where username = #{username}
+    </select>
+
+    <select id="getUserByQueryMap" parameterType="Map" resultType="User">
+        select * from user limit #{offset},#{limit}
+    </select>
+
+    <select id="getUserCount" resultType="Integer">
+        select count(*) from user
+    </select>
+
+    <delete id="deleteById" parameterType="Long">
+        delete from user where id = #{id}
+    </delete>
+
+    <insert id="addUser" parameterType="User">
+        <selectKey resultType="java.lang.Long" order="AFTER" keyProperty="id">
+            SELECT LAST_INSERT_ID()
+        </selectKey>
+        insert into user () values (null ,#{username},#{password},#{email},#{phone});
+    </insert>
+
+    <select id="getUserById" parameterType="Long" resultType="User">
+        select * from user where id = #{id}
+    </select>
+
+    <update id="updateUser" parameterType="User">
+        update user set username = #{username},email = #{email},phone = #{phone}
+        <if test="password != null and password != ''">
+            ,password = #{password}
+        </if>
+        where id = #{id}
+    </update>
+</mapper>

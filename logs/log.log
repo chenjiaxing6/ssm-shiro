@@ -1,0 +1,14 @@
+2019-05-08 21:28:17,628 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring-mybatis.xml]
+2019-05-08 21:28:18,165 INFO [org.springframework.context.support.GenericApplicationContext] - Refreshing org.springframework.context.support.GenericApplicationContext@11a9e7c8: startup date [Wed May 08 21:28:18 CST 2019]; root of context hierarchy
+2019-05-08 21:28:18,398 INFO [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] - Loading properties file from class path resource [jdbc.properties]
+2019-05-08 21:28:18,404 INFO [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-05-08 21:28:19,354 INFO [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2019-05-08 21:28:20,488 INFO [org.springframework.context.support.GenericApplicationContext] - Closing org.springframework.context.support.GenericApplicationContext@11a9e7c8: startup date [Wed May 08 21:28:18 CST 2019]; root of context hierarchy
+2019-05-08 21:28:20,498 INFO [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} closed
+2019-05-08 21:29:10,261 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring-mybatis.xml]
+2019-05-08 21:29:11,890 INFO [org.springframework.context.support.GenericApplicationContext] - Refreshing org.springframework.context.support.GenericApplicationContext@338dc873: startup date [Wed May 08 21:29:11 CST 2019]; root of context hierarchy
+2019-05-08 21:29:12,520 INFO [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] - Loading properties file from class path resource [jdbc.properties]
+2019-05-08 21:29:12,541 INFO [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-05-08 21:29:14,319 INFO [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2019-05-08 21:29:15,583 INFO [org.springframework.context.support.GenericApplicationContext] - Closing org.springframework.context.support.GenericApplicationContext@338dc873: startup date [Wed May 08 21:29:11 CST 2019]; root of context hierarchy
+2019-05-08 21:29:15,628 INFO [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} closed
