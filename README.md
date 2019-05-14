@@ -1,5 +1,3 @@
-## ssm-shiro
-使用Spring、SpringMVC、Mytatis、Shiro开发的RBAC角色权限管理系统
 ## 用到的技术
 Spring+SpringMVC+Mybatis++Druid+Shiro+Layui+全部使用ajax异步加载
 ## 实现功能
